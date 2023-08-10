@@ -1,8 +1,5 @@
-|   Number   | Color       |    Size   |
-| ----------:|:------------|:---------:|
-|     123    |   Red       |    Small  |
-|     456    |   Blue      |   Medium  |
-|     789    |  yellow     |    big    |
+def my_function():
+  print("Hello from a function")
 
 
  
