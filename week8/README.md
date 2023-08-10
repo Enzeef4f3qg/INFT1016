@@ -1,4 +1,7 @@
-make this word `inline`.
+def foo():
+    if not bar:
+        return True
+
  
 
 
