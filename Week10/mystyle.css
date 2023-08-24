@@ -1,0 +1,73 @@
+:root {
+    --base-font-color: #839496;
+    --secondary-font-color: #586E75;
+    --emphasized-font: #93A1A1;
+    --c-background-color: #002B36;
+    --c-background-highlights: #073642;
+    --c-yellow: #B58900;
+    --c-orange: #CB4B16;
+    --c-red: #DC322F;
+    --c-magenta: #D33682;
+    --c-violet: #6C71C4;
+    --c-blue: #268BD2;
+    --c-cyan: #2AA198;
+    --c-green: #859900;
+  }
+  
+  body {
+    background-color: var(--c-background-color);
+    color:var(--secondary-font-color);
+  }
+  
+  header, footer {
+    background-color: var(--c-background-highlights);
+    color: var(--base-font-color);
+  }
+  
+  main a {
+    color: var(--c-magenta);
+  }
+  
+  main a:hover {
+    color: orange; /* Highlight on hover */
+  }
+  article h2 {color: var(--c-yellow);
+  }
+
+article h3 {
+    border: 3px solid var(--c-cyan);
+
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 150%;
+    color: var(--c-yellow);
+  }
+  
+  nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+    justify-content: center; /* Center-align list items horizontally */
+  }
+  
+  aside {
+    color: var(--c-green);
+  }
+  
+  aside a {
+    color: var(--c-red);
+  }
+  
+  aside a:hover {
+    color: var(--c-blue);
+  }
+  body {
+    max-width: 800px; /* Set the maximum width */
+    margin: 0 auto; /* Center-align the page */
+  }
+  
+  article h2, article h3 {
+    padding-top: 50px; /* Add top padding to headings */
+  }
+      
