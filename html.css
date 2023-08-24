@@ -1,0 +1,86 @@
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" title="Basic" />
+:root {
+    --base-font-color: #839496;
+    --secondary-font-color: #586E75;
+    --emphasized-font: #93A1A1;
+    --c-background-color: #002B36;
+    --c-background-highlights: #073642;
+    --c-yellow: #B58900;
+    --c-orange: #CB4B16;
+    --c-red: #DC322F;
+    --c-magenta: #D33682;
+    --c-violet: #6C71C4;
+    --c-blue: #268BD2;
+    --c-cyan: #2AA198;
+    --c-green: #859900;
+  }
+  body {
+    background-color: var(--c-background-color);
+  }
+  
+  header,
+  footer {
+    background-color: var(--c-background-highlights);
+  }
+  
+  main,
+  footer,
+  header {
+    color: var(--base-font-color);
+  }
+  
+  article a {
+    color: var(--c-magenta);
+  }
+  
+  article a:hover {
+    color: var(--c-orange);
+  }
+/* Border around subsections */
+article h3,
+article p {
+  border: 3px solid var(--c-cyan);
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  font-size: 150%;
+  color: var(--c-yellow);
+}
+
+/* Remove bullet points from nav list */
+nav ul {
+  list-style-type: none;
+}
+
+/* Center and apply flex layout to nav list items */
+nav li {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Text color in the aside */
+aside {
+  color: var(--c-green);
+}
+
+/* Link styles in aside */
+aside a {
+  color: var(--c-red);
+}
+
+aside a:hover {
+  color: var(--c-blue);
+}
+/* Set the maximum width of the page */
+body {
+    max-width: 800px;
+  }
+  
+  /* Add top padding to article headings */
+  article h2 {
+    padding-top: 50px;
+  }
+      
