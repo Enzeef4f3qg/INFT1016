@@ -1,0 +1,27 @@
+:root {
+    --primary-color-light: #FFFFFF; /* Light theme colors */
+    --background-light: #F0F0F0;
+    /* Add other light theme colors */
+  }
+  
+  [data-theme="dark"] {
+    --primary-color-dark: #000000; /* Dark theme colors */
+    --background-dark: #121212;
+    /* Add other dark theme colors */
+  }
+  const themeToggle = document.querySelector('#theme-toggle');
+const htmlRoot = document.documentElement;
+
+themeToggle.addEventListener('click', () => {
+  if (htmlRoot.getAttribute('data-theme') === 'light') {
+    htmlRoot.setAttribute('data-theme', 'dark');
+  } else {
+    htmlRoot.setAttribute('data-theme', 'light');
+  }
+});
+
+// Load the user's preferred theme from local storage (if available).
+const userTheme = localStorage.getItem('theme');
+if (userTheme) {
+  htmlRoot.setAttribute('data-theme', userTheme);
+}
