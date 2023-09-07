@@ -9,19 +9,62 @@
     --background-dark: #121212;
     /* Add other dark theme colors */
   }
-  const themeToggle = document.querySelector('#theme-toggle');
-const htmlRoot = document.documentElement;
+  /* Light Theme Palette */
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #6C757D;
+  --bg-color: #FFFFFF;
+  --font-color: #333333;
+  --heading-color: #000000;
+}
 
-themeToggle.addEventListener('click', () => {
-  if (htmlRoot.getAttribute('data-theme') === 'light') {
-    htmlRoot.setAttribute('data-theme', 'dark');
-  } else {
-    htmlRoot.setAttribute('data-theme', 'light');
-  }
-});
+/* Dark Theme Palette */
+.dark-theme{
+  --primary-color: #FFA500;
+  --secondary-color: #F0E68C;
+  --bg-color: #333333;
+  --font-color: #FFFFFF;
+  --heading-color: #CCCCCC;
+}
 
-// Load the user's preferred theme from local storage (if available).
-const userTheme = localStorage.getItem('theme');
-if (userTheme) {
-  htmlRoot.setAttribute('data-theme', userTheme);
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.nav {
+  color:red;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }

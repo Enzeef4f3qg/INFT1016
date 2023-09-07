@@ -1,0 +1,27 @@
+// JavaScript function to update the heading
+function updateHeading() {
+    const nameInput = document.getElementById('name-input');
+    const greetingHeading = document.getElementById('greeting-heading');
+    
+    const userName = nameInput.value;
+    
+    if (userName) {
+      greetingHeading.textContent = `Hello, ${userName}`;
+      
+      // Store the user's name in local storage
+      localStorage.setItem('user_name', userName);
+    }
+  }
+  
+  // Add an event listener to the button
+  const updateHeadingButton = document.getElementById('update-heading-button');
+  updateHeadingButton.addEventListener('click', updateHeading);
+  
+  // Check if the user's name is stored in local storage
+  const storedUserName = localStorage.getItem('user_name');
+  if (storedUserName) {
+    const nameInput = document.getElementById('name-input');
+    nameInput.value = storedUserName;
+    updateHeading(); // Update heading with stored name
+  }
+  
